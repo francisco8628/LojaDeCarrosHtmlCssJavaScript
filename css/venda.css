@@ -1,0 +1,324 @@
+/********************pagina venda*************/
+.venda{
+    min-height: calc(100vh - 130px);
+    padding: 90px 4px;
+}
+
+header{
+    border-bottom: 2px solid #EB2D2D;
+}
+.contant-venda{
+    margin-top: 40px;
+}
+.container-venda{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+
+}
+.search-1{
+    width: 90%;
+}
+.search-1 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.search-1 .barra-preco{
+    width: 100%;
+    height: 20px;
+    background:white;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.barra-preco-fill{ /*preenchimento da barra*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient( to bottom,rgb(255,255,255),rgb(200,200,200));
+}
+.pointer-barra{/*botão da barra*/
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    border-radius: 8px;
+    background:  linear-gradient( to bottom,rgb(255,255,255),rgb(180,180,180));
+    border: 1px solid #777;
+    cursor: pointer;
+}
+.valor-pesquisa{
+  margin-top: 8px;    
+}
+.valor-pesquisa p{
+    color: black;
+    font-size: 15px;
+ }
+ .valor-pesquisa p:nth-of-type(1){
+    float: left;
+ }
+ .valor-pesquisa p:nth-of-type(2){
+     float: right;
+ }
+
+ /****************search-2**************************/
+ .search-2{
+     margin-top: 40px;
+ }
+ .search-2 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;  
+ }
+
+ /****************"form-venda-wrapper****************/
+ .form-venda-wrapper{
+     margin-top: 10px;
+ }
+
+ .form-venda-wrapper input[type=checkbox]{
+     display: none;
+ }
+
+ .form-venda-wrapper label{
+     width: 20px;
+     height: 20px;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+     vertical-align: top;
+     cursor: pointer;
+     position: relative;
+ }
+ .form-venda-wrapper input[type=checkbox]:checked + label > .circle{
+     display: block;
+ }
+ .circle{
+     width: 8px;
+     height: 8px;
+     border-radius: 4px;
+     background: black;
+     display: none;
+     position: absolute;
+     left: 6px;
+     top: 6px;
+
+ }
+ .form-venda-wrapper span{
+   padding: 0 10px;
+   vertical-align: top;
+   display: inline-block;
+   
+}
+/**********************vitrine venda*************************************/
+.vintrine-venda{
+    float: left;
+    width: 70%;
+}
+.vintrine-venda .vitrine-destaque{
+    margin-top: 20px;
+}
+
+/*************************Venda single**********************************/
+.venda-single{
+   padding: 0 2%; 
+}
+section.venda-single .container-venda{
+    padding: 40px 0;
+    max-width: 1000px;
+}
+.info-veiculo{
+    float: left;
+    width: 60%;
+}
+.descricao-veiculo{
+    float: left;
+    width: 40%;
+    padding: 4.5% 2%; 
+}
+.descricao-veiculo p{
+    max-width: 360px;
+    margin-top: 25px;
+}
+.descricao-veiculo a{
+    margin-top: 25px;
+}
+
+.foto-destaque{
+    width: 100%;
+    padding-top: 70%;   
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-galeria-parent{
+    width: 100%;
+    padding: 0 36px;
+    position: relative;
+}
+
+.nav-galeria-parent .arrow-left{
+    font-size: 58px;
+    position: absolute;
+    color: red;
+    left: 8px;
+    top: 35%; 
+    cursor: pointer;   
+}
+
+.nav-galeria-parent .arrow-rigth{
+    font-size: 58px;
+    color: red;
+    position: absolute;
+    right: 8px;
+    top: 35%; 
+    cursor: pointer;   
+}
+.nav-galeria{
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+    
+}
+.nav-galeria-wrapper{
+    /*
+    width: 200%;  vai ser feito via java script
+    */
+}
+.mini-img-wrapper{
+    float: left;
+    padding:  18px;
+    /*border: 18px solid white;*/
+   /* padding-top:calc(33.3% * (100 /200)* 0.7); /* o 0.5 é para controlar a altura da imagem*/
+   /*
+    width: calc(33.3% * (100 /200));           /*200 é o tamanho da div que invelopa as imagens = via javascript
+    */
+}
+.mini-img{
+    width: 100%;
+    height: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+/****************info bread*******************/
+.info-bread a{
+    color: black;
+}
+
+.info-bread span{
+    padding: 0 30px;
+}
+.info-bread a:nth-of-type(3){
+    color: red;
+}
+/*******************contato-venda*******************/
+.contato-venda{
+    padding: 0;
+}
+.contato-venda form{
+   padding: 40px 0;
+}
+/*******************section sobre pagina Sobre*********/
+section.sobre{
+  min-height: 90%; 
+  padding: 40px 2%; 
+}
+.sobre .container-venda{
+    margin-top: 30px;
+    max-width: 840px;
+}
+.sobre .img-destaque-sobre{
+    width: 100%;
+    padding-top: 60% ;
+    background-color: rgb(220,220,220);
+}
+/********************"descricao-autor"********************/
+.descricao-autor{
+    margin-top: 20px;
+}
+.descricao-autor h2{
+ font-size: 24px;
+}
+.descricao-autor p{
+ font-size: 16px;
+ margin-top: 10px;
+}
+/*****************descrição autor2*********************/
+.descricao-autor-2{
+    margin-top: 20px;
+}
+.img-small{
+    width: 30%;
+    padding-top: 30%;
+    background-color: rgb(220,220,220);
+    float: left;
+}
+.descricao-autor-2 p{
+    float: left;
+    width: 70%;
+    padding:  0 10px;
+}
+
+@media screen and (max-width:768px){
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+   .vintrine-venda{
+    float: inline-start;
+    text-align: center;
+    width: 100%;
+   } 
+
+   .search-1,.search-2{
+       display: inline-block;
+   }
+   .search-2{
+       text-align: left;
+   }
+
+   .info-veiculo{
+       width: 100%;
+   }
+   .descricao-veiculo{
+       text-align: center;
+       max-width: none;
+       float: none;
+       width: 100%;
+       padding: 0;
+   }
+   .descricao-veiculo a{
+       display: inline-block;
+   }
+   .descricao-veiculo p{
+       max-width: none;
+   }
+
+   .img-small{
+    width: 50%;
+    margin-left: 25% ;
+   }
+   .descricao-autor-2 p{
+       width: 100%;
+   }
+}

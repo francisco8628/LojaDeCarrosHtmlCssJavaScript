@@ -1,0 +1,9 @@
+$(function(){  
+    
+$('.mobile').click(function(){
+    $('.mobile').find('ul').slideToggle();
+    
+    return false
+})
+
+})
